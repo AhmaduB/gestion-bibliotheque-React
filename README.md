@@ -1,16 +1,63 @@
-# React + Vite
+# Gestion de bibliothèque
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application React pour gérer une petite bibliothèque : afficher une liste de livres, en ajouter, rechercher, filtrer et gérer leur statut (disponible / emprunté).
 
-Currently, two official plugins are available:
+## Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Affichage des livres sous forme de cartes
+- Ajout d'un livre via un formulaire (titre + auteur) avec messages d'erreur
+- Détection des doublons
+- Emprunter / rendre un livre
+- Suppression d'un livre
+- Recherche par titre ou auteur
+- Filtre par statut (Tous / Disponibles / Empruntés)
+- Compteur de livres disponibles
+- Sauvegarde automatique dans le navigateur (`localStorage`)
+- Interface responsive
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript (ES6+)
 
-## Expanding the ESLint configuration
+## Concepts utilisés
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Composants et props (`BookCard`)
+- Hooks : `useState` et `useEffect`
+- Rendu de liste avec `map` et `key`
+- Formulaire contrôlé (`value` + `onChange`)
+- Filtrage de données (`filter`, `some`)
+- Persistance avec `localStorage`
+
+## Installation
+
+```bash
+git clone https://github.com/TON-PSEUDO/gestion-bibliotheque-react.git
+cd gestion-bibliotheque-react
+npm install
+npm run dev
+```
+
+Ouvre ensuite l'adresse affichée dans le terminal (souvent `http://localhost:5173`).
+
+## Structure du projet
+
+```
+src/
+├── components/
+│   └── BookCard.jsx
+├── App.jsx
+└── main.jsx
+```
+
+## Améliorations possibles
+
+- Modifier un livre existant
+- Séparer le formulaire dans un composant `BookForm`
+- Déplacer les styles dans un fichier CSS
+- Ajouter une date d'emprunt et le nom de l'emprunteur
+
+## Auteur
+
+Ton nom - [AhmaduB](https://github.com/AhmaduB/gestion-bibliotheque-React)
