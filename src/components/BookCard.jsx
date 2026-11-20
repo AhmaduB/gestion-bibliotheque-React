@@ -1,4 +1,4 @@
-export default function BookCard({ titre, auteur, isDisponible, onClickEmprunt, onSupprimer }) {
+export default function BookCard({ titre, auteur, isDisponible, onClickEmprunt, onSupprimer}) {
   return (
     <div
       style={{
@@ -31,7 +31,7 @@ export default function BookCard({ titre, auteur, isDisponible, onClickEmprunt, 
         <button
           onClick={onSupprimer}
           style={{
-            padding: '8px',
+            padding: '9px',
             borderRadius: '5px',
             border: '1px solid grey',
             backgroundColor: 'white',
