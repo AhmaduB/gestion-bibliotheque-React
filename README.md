@@ -60,4 +60,4 @@ src/
 
 ## Auteur
 
-Ton nom - [AhmaduB](https://github.com/AhmaduB/gestion-bibliotheque-React)
+[AhmaduB](https://github.com/AhmaduB/gestion-bibliotheque-React)
